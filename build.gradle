@@ -1,22 +1,17 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.0'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
+    id 'java'
+    id 'eclipse'
+    id 'idea'
 }
 
-group = 'com.example.template'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
-targetCompatibility = '17'
-
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.3.1'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.3.1'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:3.3.1'
 }
 
 tasks.named('test') {
