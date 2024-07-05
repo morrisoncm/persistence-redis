@@ -5,7 +5,7 @@ import com.demo.template.domain.User;
 
 public interface GreetingService {
 
-	Message sayHelloWorld();
+    Message sayHelloWorld();
 
-	Message sayHelloWorldToUser(User user);
+    Message sayHelloWorldToUser(User user);
 }
